@@ -1,0 +1,12 @@
+#ifndef PERFECT_NUMBERS_H
+#define PERFECT_NUMBERS_H
+int classify_number(int number);
+typedef enum {
+   PERFECT_NUMBER = 1,
+   ABUNDANT_NUMBER = 2,
+   DEFICIENT_NUMBER = 3,
+   ERROR = -1
+} kind;
+int aliquot_sum(int number);
+
+#endif
